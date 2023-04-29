@@ -1,3 +1,4 @@
+/* UC1... */
 * {
     box-sizing: border-box;
 }
@@ -39,4 +40,40 @@ body{
     opacity: 1;
     color: black;
     margin-left: 10px;
+}
+/* UC2... */
+.form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+    background-color: white;
+    min-height: auto;
+}
+.form {
+    background: white;
+    min-width: 1000px;
+    margin: 2%;
+    box-shadow: 0px 3px 6px black;
+    border: 1px solid white;
+    border-radius: 8px;
+    opacity: 1;
+}
+.form-head {
+    display: flex;
+    background: blue 0% 0% no-repeat padding-box;
+    border-radius: 8px 8px 0px 0px;
+    opacity: 1;
+    padding: 30px;
+}
+.form-head-text {
+    flex: 6;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font: normal normal normal 25px Roboto;
+    letter-spacing: 0px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 1;
 }
