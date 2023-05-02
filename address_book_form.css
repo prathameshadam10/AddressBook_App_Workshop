@@ -1,79 +1,191 @@
 /* UC1... */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
-    margin: 0;
-    height: 100;
+  margin: 0;
+  height: 100;
 }
 .header{
-    padding: 10px 0;
-    background: #fff;
-    opacity: 1;
+  padding: 10px 0;
+  background: #fff;
+  opacity: 1;
 }
 .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .logo-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
 }
 .addressbook-text {
-    text-align: left;
-    font: normal normal bold 22px/25px Montserrat;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    opacity: 1;
-    color: blue;
-    margin-left: 10px;
+  text-align: left;
+  font: normal normal bold 22px/25px Montserrat;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  opacity: 1;
+  color: blue;
+  margin-left: 10px;
 }
 .addressBook-book{
-    text-align: left;
-    font: normal normal bold 22px/25px Montserrat;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    opacity: 1;
-    color: black;
-    margin-left: 10px;
+  text-align: left;
+  font: normal normal bold 22px/25px Montserrat;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  opacity: 1;
+  color: black;
+  margin-left: 10px;
 }
 /* UC2... */
 .form-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid green;
-    background-color: white;
-    min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid green;
+  background-color: white;
+  min-height: auto;
 }
 .form {
-    background: white;
-    min-width: 1000px;
-    margin: 2%;
-    box-shadow: 0px 3px 6px black;
-    border: 1px solid white;
-    border-radius: 8px;
-    opacity: 1;
+  background: white;
+  min-width: 1000px;
+  margin: 2%;
+  box-shadow: 0px 3px 6px black;
+  border: 1px solid white;
+  border-radius: 8px;
+  opacity: 1;
 }
 .form-head {
-    display: flex;
-    background: blue 0% 0% no-repeat padding-box;
-    border-radius: 8px 8px 0px 0px;
-    opacity: 1;
-    padding: 30px;
+  display: flex;
+  background: blue 0% 0% no-repeat padding-box;
+  border-radius: 8px 8px 0px 0px;
+  opacity: 1;
+  padding: 30px;
 }
 .form-head-text {
-    flex: 6;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    font: normal normal normal 25px Roboto;
-    letter-spacing: 0px;
-    color: white;
-    text-transform: uppercase;
-    opacity: 1;
+  flex: 6;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font: normal normal normal 25px Roboto;
+  letter-spacing: 0px;
+  color: white;
+  text-transform: uppercase;
+  opacity: 1;
+}
+/* UC3... */
+.row-content {
+  margin-left: 30px;
+  min-width: 80%;
+  min-height: 80%;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-constrains {
+  margin: 2% 10%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+label {
+  /* padding: 12px 12px 12px 0; */
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.text {
+  text-align: left;
+  font: normal normal normal 18px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+}
+
+.input {
+  width: 103%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  opacity: 1;
+  resize: horizontal;
+  padding: 16px 12px;
+  margin-left: -25px;
+}
+
+textarea {
+  height: 80%;
+  width: 100%;
+  resize: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  letter-spacing: -1px;
+  opacity: 1;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.column-constrains {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column-content {
+  flex: 2;
+}
+
+select {
+  padding: 12px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  text-align: left;
+  font: normal normal normal 18px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+  width: 80%;
+}
+
+.zipcode {
+  padding: 15px 12px;
+  margin-left: 0px;
+}
+
+ /* UC4... */
+ error-output {
+  margin-left: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: red;
+}
+.button {
+  font-size: 20px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  min-width: 140px;
+  padding: 7px 7px;
+  border: 1px solid #707070;
+  cursor: pointer;
+  margin-left: 21%;
+  margin-top: 47px;
+}
+
+.button-submit{
+  margin-right: 50px;
+}
+
+.button:hover{
+  box-shadow: 0px 8px 15px rgba(77, 74, 74, 0.3);
 }

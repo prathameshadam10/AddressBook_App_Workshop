@@ -20,7 +20,7 @@
     </header>
 <!-- UC2... -->
     <div class="form-content">
-        <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
+        <form action="#" class="form" onreset="resetForm()" onsubmit="save(event)">
         <div class="form-head">
             <div class="form-head-text">Person Address Form</div>
             <a href="address_book_form.html"><img class="form-head-image" src=".\assets\cancelButton.png" alt="logo"></a>
@@ -36,6 +36,7 @@
                 <label for="address" class="label text">Address</label>
                 <br>
                 <textarea name="address" id="address" placeholder="Your address.." required></textarea>
+                <error-output class="address-error"></error-output>
             </div>
             <div class="row content">
                 <div class="column-constrains">
@@ -70,11 +71,31 @@
                         <option value="Telangana">Telengana</option> 
                         </select>
                      </div>
-                     
+                     <div class="column-content">
+                        <label for="zip" class="label text">Zip code</label>
+                        <br>
+                        <input type="text" class="input zipcode" id="zip" name="zip" placeholder="Your zipcode.." required>
+                        <error-output class="zip-error"></error-output>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        </form>
+                <div class="row-content">
+                    <label for="phoneNumber" class="lable text">Phone Number</label>
+                    <br>
+                    <input type="tel" class="input" id="phoneNumber" name="phoneNumber" placeholder="Your phone number.." required>
+                    <error-output class="tel-error"></error-output>
+                </div>
+                <div class="buttons-contact">
+                    
+                    <button type="submit" class="button button-submit" id="submitButton">Add</button>
+                    <button type="reset" class="button button-reset" id="resetButton">Reset</button>
+                </div>
+                </div>
+            </form>
     </div>
+    <script deferc src="addressBookForm.js"></script>
+    <script defer src="contactData.js"></script>
+    <script src="./sitePropertiesAddressBook.js"></script>
+    <script src="./utilityAddressBook.js"></script>
 </body>
 </html>
